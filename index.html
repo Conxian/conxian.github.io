@@ -1,366 +1,275 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="description" content="Conxian — open-source protocol and ecosystem for sovereign, automated monetary infrastructure on Bitcoin and Stacks."/>
-    <title>Conxian · Open-Source Ecosystem</title>
-    <link rel="canonical" href="https://conxian.github.io/"/>
-    <meta property="og:url" content="https://conxian.github.io/"/>
-    <meta property="og:title" content="Conxian · Open-Source Ecosystem"/>
-    <meta property="og:description" content="Explore all Conxian repositories — protocol core, sovereign wallet, gateway middleware, enclave SDK, platform tooling, and more."/>
-    <meta property="og:image" content="https://conxian.github.io/Conxian_Logo.jpg"/>
+    <title>Conxian · Sovereign Monetary Infrastructure</title>
     <link rel="icon" href="Conxian_Logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
-<body class="bg-background text-on-background selection:bg-primary selection:text-white overflow-x-hidden">
+<body class="bg-background text-on-background">
 
-<header class="w-full bg-background/90 backdrop-blur-xl sticky top-0 z-50 border-b border-on-background/[0.03]">
-    <nav class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-12 h-20 md:h-24">
-        <div class="logo-container">
-            <img src="Conxian_Logo.jpg" alt="Conxian">
-        </div>
-        <div class="flex items-center gap-6">
-            <a href="#repos" class="nav-link">Repositories</a>
-            <a href="https://github.com/Conxian" class="btn-primary" style="padding: 10px 24px;">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+<nav class="sticky top-0 z-50 w-full h-20 md:h-24 bg-background/80 backdrop-blur-md border-b border-on-background/[0.02]">
+    <div class="max-w-[1440px] mx-auto h-full px-8 md:px-12 flex items-center justify-between">
+        <a href="/" class="logo-container">
+            <img src="Conxian_Logo.jpg" alt="Conxian Logo">
+        </a>
+        <div class="flex items-center gap-8">
+            <a href="#repos" class="mono-text text-xs font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors hidden md:block">Repositories</a>
+            <a href="https://github.com/Conxian" class="btn-primary">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
             </a>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
 
 <main>
-    <!-- Hero -->
-    <section class="relative max-w-[1440px] mx-auto px-8 md:px-12 pt-24 md:pt-32 pb-32 md:pb-48 hero-gradient">
-        <div class="max-w-4xl">
-            <div class="badge mb-8">
-                <span class="pulse-dot"></span>
-                Public open-source ecosystem
-            </div>
-            <h1 class="text-[2.75rem] md:text-[4.25rem] font-bold tracking-tight leading-[0.97] mb-8 mono-text">
-                Sovereign infrastructure for automated monetary systems.
-            </h1>
-            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 font-light">
-                Conxian is a multi-dimensional, Stacks-native automated monetary platform. This GitHub organization hosts the protocol core, reference clients, middleware, developer tooling, and supporting infrastructure — maintained across the Conxian protocol and Conxian-Labs builder surface.
-            </p>
-            <div class="flex flex-wrap gap-6">
-                <a href="#repos" class="btn-primary">
-                    Explore repositories
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </a>
-                <a href="https://github.com/Conxian/Conxian" class="btn-outline">Protocol core</a>
+    <!-- Hero Section -->
+    <section class="pt-24 pb-32 md:pt-32 md:pb-48 px-8 md:px-12 max-w-[1440px] mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <div class="mb-8">
+                    <span class="status-chip">
+                        <span class="status-dot-active"></span>
+                        Public Open-Source Ecosystem
+                    </span>
+                </div>
+                <h1 class="text-5xl font-bold mb-8 leading-1 tracking-tight">Sovereign infrastructure for automated monetary systems.</h1>
+                <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-12 font-light">
+                    Conxian is a multi-dimensional, Stacks-native automated monetary platform. This GitHub organization hosts the protocol core, reference clients, middleware, developer tooling, and supporting infrastructure — maintained across the Conxian protocol and Conxian-Labs builder surface.
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <a href="#repos" class="btn-primary">Explore Repositories →</a>
+                    <a href="https://github.com/Conxian/Conxian" class="btn-outline">Protocol Core</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Bar -->
-    <section class="w-full bg-surface-container-low py-12 border-y border-on-background/[0.02]">
-        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
-                <div>
-                    <div class="stat-number">12</div>
-                    <div class="stat-label mt-2">Public repositories</div>
+    <section class="w-full border-y border-on-background/[0.02] bg-surface-container-low py-12">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-2 md:text-left text-center">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">Public Repositories</span>
+            </div>
+            <div class="flex flex-col gap-2 md:text-left text-center">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Languages</span>
+            </div>
+            <div class="flex flex-col gap-2 md:text-left text-center">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Surfaces</span>
+            </div>
+            <div class="flex flex-col gap-2 md:text-left text-center">
+                <div class="stat-number active-val">
+                    <span class="status-dot-active"></span>
+                    Active
                 </div>
-                <div>
-                    <div class="stat-number">4</div>
-                    <div class="stat-label mt-2">Languages</div>
-                </div>
-                <div>
-                    <div class="stat-number">2</div>
-                    <div class="stat-label mt-2">Surfaces</div>
-                </div>
-                <div>
-                    <div class="stat-number flex items-center gap-2 md:block">
-                        <span class="pulse-dot" style="display:inline-block;width:10px;height:10px;"></span>
-                        Active
-                    </div>
-                    <div class="stat-label mt-2">Ecosystem status</div>
-                </div>
+                <span class="stat-label">Ecosystem Status</span>
             </div>
         </div>
     </section>
 
-    <!-- Repositories Section -->
-    <section id="repos" class="max-w-[1440px] mx-auto px-8 md:px-12 py-24 md:py-32">
-        <!-- conxian.org Surface -->
+    <!-- Repository Sections -->
+    <section id="repos" class="py-24 md:py-32 px-8 md:px-12 max-w-[1440px] mx-auto">
+        <!-- Section 1: Protocol -->
         <div class="mb-24">
-            <span class="section-label">conxian.org · Protocol &amp; DAO</span>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-12">
+            <div class="grid lg:grid-cols-12 gap-8 mb-12">
                 <div class="lg:col-span-5">
+                    <span class="section-label">conxian.org · protocol & dao</span>
                     <h2 class="section-title">Protocol core and public infrastructure.</h2>
                 </div>
-                <div class="lg:col-span-7">
-                    <p class="section-subtitle max-w-2xl">
-                        The protocol, interface, synchronization, and shared-primitive repositories that form the canonical Conxian stack. These repos define the protocol identity, DAO-facing surface, and core libraries.
-                    </p>
+                <div class="lg:col-span-7 flex items-end">
+                    <p class="section-subtitle">The protocol, interface, synchronization, and shared-primitive repositories that form the canonical Conxian stack. These repos define the protocol identity, DAO-facing surface, and core libraries.</p>
                 </div>
             </div>
 
-            <div class="repo-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Conxian -->
-                <a href="https://github.com/Conxian/Conxian" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-org">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <a href="https://github.com/Conxian/Conxian" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">Conxian</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Protocol core</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Protocol Core</div>
                         </div>
                     </div>
                     <p class="repo-description">A Multi-Dimensional, Stacks-Native Automated Monetary Platform. The canonical protocol definition and DAO-facing core of the Conxian ecosystem.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot clarity"></span>Clarity</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
+                        <span class="flex items-center"><span class="lang-dot clarity"></span>Clarity</span>
+                        <span class="flex items-center gap-1">
+                            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
                             1
                         </span>
                     </div>
                 </a>
 
                 <!-- conxian_ui -->
-                <a href="https://github.com/Conxian/conxian_ui" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-org">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <a href="https://github.com/Conxian/conxian_ui" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxian_ui</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Interface layer</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Interface Layer</div>
                         </div>
                     </div>
                     <p class="repo-description">Public interaction and interface layer for the Conxian protocol. Provides the primary user-facing surface for protocol engagement.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot typescript"></span>TypeScript</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
+                        <span class="flex items-center"><span class="lang-dot typescript"></span>TypeScript</span>
+                        <span class="flex items-center gap-1">
+                            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
                             1
                         </span>
                     </div>
                 </a>
 
                 <!-- conxian-nexus -->
-                <a href="https://github.com/Conxian/conxian-nexus" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-org">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <a href="https://github.com/Conxian/conxian-nexus" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxian-nexus</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Proof layer</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Proof Layer</div>
                         </div>
                     </div>
                     <p class="repo-description">A protocol-first "Glass Node" and proof layer — the primary observation, synchronization, and verification point for Tier 1 Chain Families in the Conxian ecosystem.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot rust"></span>Rust</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
-                    </div>
-                </a>
-
-                <!-- lib-conxian-core -->
-                <a href="https://github.com/Conxian/lib-conxian-core" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-org">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        </div>
-                        <div>
-                            <div class="repo-name">lib-conxian-core</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Shared library</div>
-                        </div>
-                    </div>
-                    <p class="repo-description">Conxian Core — shared protocol primitives for the Conxian ecosystem. Reusable cryptographic, serialization, and protocol-type definitions.</p>
-                    <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot rust"></span>Rust</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
-                    </div>
-                </a>
-
-                <!-- .github -->
-                <a href="https://github.com/Conxian/.github" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-org">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                        </div>
-                        <div>
-                            <div class="repo-name">.github</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Org defaults</div>
-                        </div>
-                    </div>
-                    <p class="repo-description">Public defaults and documentation guidance for the Conxian ecosystem. Community health files, issue templates, and contribution guidelines.</p>
-                    <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot python"></span>Python</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot rust"></span>Rust</span>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!-- conxian-labs Surface -->
+        <!-- Section 2: Labs -->
         <div>
-            <span class="section-label">conxian-labs · Builder &amp; Operator</span>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-12">
+            <div class="grid lg:grid-cols-12 gap-8 mb-12">
                 <div class="lg:col-span-5">
+                    <span class="section-label">conxian-labs · builder & operator</span>
                     <h2 class="section-title">Builder tooling, middleware, and operator infrastructure.</h2>
                 </div>
-                <div class="lg:col-span-7">
-                    <p class="section-subtitle max-w-2xl">
-                        Conxian-Labs is the builder and operator layer around the broader Conxian ecosystem. These repositories provide the middleware, wallets, deployment tooling, enclave SDK, and platform scaffolding that make the ecosystem usable.
-                    </p>
+                <div class="lg:col-span-7 flex items-end">
+                    <p class="section-subtitle">Conxian-Labs is the builder and operator layer around the broader Conxian ecosystem. These repositories provide the middleware, wallets, deployment tooling, enclave SDK, and platform scaffolding that make the ecosystem usable.</p>
                 </div>
             </div>
 
-            <div class="repo-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- conxian-gateway -->
-                <a href="https://github.com/Conxian/conxian-gateway" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <a href="https://github.com/Conxian/conxian-gateway" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxian-gateway</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Middleware</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Middleware</div>
                         </div>
                     </div>
                     <p class="repo-description">Conxian Gateway — Rust middleware universal bridging blockchain with legacy banking (ISO 20022). The integration surface for institutional and traditional finance connectivity.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot rust"></span>Rust</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot rust"></span>Rust</span>
                     </div>
                 </a>
 
                 <!-- conxius-wallet -->
-                <a href="https://github.com/Conxian/conxius-wallet" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 9v2m0 4h.01M8 2v2m8-2v2M4 9h.01M20 9h.01M4 15h.01M20 15h.01"/></svg>
+                <a href="https://github.com/Conxian/conxius-wallet" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxius-wallet</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Sovereign wallet</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Sovereign Wallet</div>
                         </div>
                     </div>
                     <p class="repo-description">The Sovereign Wallet — an Android-first, offline-first wallet for Bitcoin L1 and Bitcoin-adjacent layers, with explicit interlayer (Wormhole/NTT) execution support.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot typescript"></span>TypeScript</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot typescript"></span>TypeScript</span>
                     </div>
                 </a>
 
                 <!-- conxius-platform -->
-                <a href="https://github.com/Conxian/conxius-platform" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <a href="https://github.com/Conxian/conxius-platform" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxius-platform</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Platform scaffolding</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Platform Scaffolding</div>
                         </div>
                     </div>
                     <p class="repo-description">Development and control-plane scaffolding for composing parts of the Conxian stack locally and in managed environments. Orchestration, configuration, and deployment primitives.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot typescript"></span>TypeScript</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot typescript"></span>TypeScript</span>
                     </div>
                 </a>
 
                 <!-- conxius-orbit -->
-                <a href="https://github.com/Conxian/conxius-orbit" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                <a href="https://github.com/Conxian/conxius-orbit" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m11.4 0l-.7.7m0 11.4l.7.7m-12.1 0l-.7.7"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxius-orbit</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Deployment toolkit</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Deployment Toolkit</div>
                         </div>
                     </div>
                     <p class="repo-description">Conxius Orbit — GUI/CLI deployment toolkit for Stacks smart contracts. Streamlines contract authoring, testing, and deployment workflows for Clarity developers.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot python"></span>Python</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot python"></span>Python</span>
                     </div>
                 </a>
 
                 <!-- conxius-enclave-sdk -->
-                <a href="https://github.com/Conxian/conxius-enclave-sdk" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <a href="https://github.com/Conxian/conxius-enclave-sdk" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxius-enclave-sdk</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Enclave SDK</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Enclave SDK</div>
                         </div>
                     </div>
                     <p class="repo-description">Conxius Enclave SDK — cross-platform hardware enclave abstractions for sovereign computing. Trusted execution environment primitives for secure key management and attestation.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot rust"></span>Rust</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
+                        <span class="flex items-center"><span class="lang-dot rust"></span>Rust</span>
                     </div>
                 </a>
 
                 <!-- conxian-labs-site -->
-                <a href="https://github.com/Conxian/conxian-labs-site" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <a href="https://github.com/Conxian/conxian-labs-site" class="repo-card group" target="_blank" rel="noopener">
+                    <div class="repo-external-link"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+                    <div class="flex items-center gap-4 mb-1">
+                        <div class="repo-icon">
+                            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                         </div>
                         <div>
                             <div class="repo-name">conxian-labs-site</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">Public site</div>
+                            <div class="text-xs text-on-surface-variant uppercase tracking-widest">Public site</div>
                         </div>
                     </div>
                     <p class="repo-description">Official website repository for Conxian-Labs — the portfolio, trust, and discovery surface for the wider Conxian ecosystem. Hosted at conxian-labs.com.</p>
                     <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot html"></span>HTML</span>
-                        <span class="repo-stars">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-                            0
-                        </span>
-                    </div>
-                </a>
-
-                <!-- conxian.github.io (self) -->
-                <a href="https://github.com/Conxian/conxian.github.io" class="repo-card" target="_blank" rel="noopener">
-                    <div class="repo-card-header">
-                        <div class="repo-icon conxian-labs">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                        </div>
-                        <div>
-                            <div class="repo-name">conxian.github.io</div>
-                            <div style="font-size:0.65rem;color:var(--on-surface-variant);text-transform:uppercase;letter-spacing:0.1em;">GitHub Pages</div>
-                        </div>
-                    </div>
-                    <p class="repo-description">Organization-level GitHub Pages site — indexes all Conxian repositories and serves as the central discovery surface for the open-source ecosystem.</p>
-                    <div class="repo-meta">
-                        <span class="repo-lang"><span class="lang-dot html"></span>HTML</span>
+                        <span class="flex items-center"><span class="lang-dot html"></span>HTML</span>
                     </div>
                 </a>
             </div>
@@ -370,14 +279,14 @@
     <!-- CTA Section -->
     <section class="w-full bg-surface-container-low py-24 md:py-32 border-t border-on-background/[0.02]">
         <div class="max-w-[1440px] mx-auto px-8 md:px-12 text-center">
-            <span class="section-label" style="text-align:center;">Get involved</span>
-            <h2 class="section-title mb-6" style="max-width:700px;margin-left:auto;margin-right:auto;">Build on sovereign infrastructure.</h2>
-            <p class="section-subtitle mb-12 max-w-xl" style="margin-left:auto;margin-right:auto;">
+            <span class="section-label">Get involved</span>
+            <h2 class="section-title mb-6 mx-auto max-w-700">Build on sovereign infrastructure.</h2>
+            <p class="section-subtitle mb-12 max-w-xl mx-auto">
                 Explore the repositories, contribute to the protocol, or integrate Conxian infrastructure into your stack.
             </p>
             <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://github.com/Conxian" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                     View on GitHub
                 </a>
                 <a href="https://www.conxian-labs.com" class="btn-outline">conxian-labs.com</a>
@@ -390,10 +299,10 @@
     <div class="max-w-[1440px] mx-auto px-8 md:px-12 flex flex-wrap justify-between gap-8">
         <div class="flex flex-col gap-3">
             <div class="logo-container">
-                <img src="Conxian_Logo.jpg" alt="Conxian">
+                <img src="Conxian_Logo.jpg" alt="Conxian ecosystem logo">
             </div>
             <p class="mono-text text-[0.65rem] text-on-surface-variant uppercase tracking-widest">
-                © 2026 CONXIAN · OPEN-SOURCE ECOSYSTEM
+                © 2024 - 2025 CONXIAN · OPEN-SOURCE ECOSYSTEM
             </p>
         </div>
         <div class="flex gap-12">
