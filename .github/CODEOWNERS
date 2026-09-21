@@ -1,0 +1,11 @@
+# Global code owners
+*       @Conxian/core-maintainers
+
+# GitHub Workflows & Deployment
+/.github/workflows/ @Conxian/core-maintainers
+
+# Site assets and pages
+/css/ @Conxian/core-maintainers
+/fonts/ @Conxian/core-maintainers
+/index.html @Conxian/core-maintainers
+/404.html @Conxian/core-maintainers
